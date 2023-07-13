@@ -1,0 +1,35 @@
+$bg-color: #1d1c1c;
+
+.header{
+    height: 80px;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    > img {
+        height: 90%;
+    }
+
+    > div{
+        width: 80%;
+        margin-left: 2rem;
+        > a {
+            margin: 2rem; 
+            text-decoration: none;
+            font-size: large;       
+        }
+    }
+    
+    >svg{
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s;
+        &:hover {
+            color: #b9b9b9;
+            transform: translateZ(10px) scale(1.1);
+        }
+    }
+}

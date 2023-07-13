@@ -1,0 +1,56 @@
+$bg-color: #1d1c1c;
+
+
+.banner-box{
+    background-color: $bg-color;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    >.banner{
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+    }
+    >.banner-content{
+        position: absolute;
+        color: #fff;
+        z-index: 1;
+        font-size: 2rem;
+        width: 50%;
+        padding-left: 1rem;
+
+        >p{
+            padding-top: 1rem;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+    }
+}
+
+
+.row{
+    padding: 1rem;
+    background-color: $bg-color;
+    >div{
+        display: flex;
+        overflow-x: auto;
+    }
+    >h4{
+        font-weight: 500;
+    }
+}
+
+.card{
+    width: 180px;
+    margin: 1rem;
+    transition: transform 0.3s;
+
+    &:hover{
+        transform: translateZ(10px) scale(1.1);
+    }
+}
